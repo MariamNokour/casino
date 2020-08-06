@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="roulette.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="Roulette.js"></script>
+</head>
+<body>
+
+    <!-- DEBUT HEADER -->
+    <div class="body">
+    <header>
+        <div class="head">
+            <br><div class="bord"></div>
+            <h2>Mi Casino</h2>
+            <div class="bord"></div>
+
+        </div>
+
+    <!-- DEBUT NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="roulette.html" class="active">Roulette</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- FIN NAVIGATION -->
+    <!-- FIN HEADER -->
+
+
+    <div class="container">
+        <h1>Tout dépend du hasard la vie n'est qu'un jeu</h1>
+        <h3> La chance appartient à tout le monde </h3>
+        <br><br><br><br>
+        
+        <br><div class="mar">
+        <p> Les règles du jeu de la roulette sont simples : <br> Si vous tirez le numéro du joueur, vous gagnez la mise 36 fois.
+        <br>Si vous tirez un numéro pair et que vous avez choisi « pair », vous remportez le double de la mise. <br> Même chose avec les impairs.
+        <br>Bonne chance !</p>
+        
+       
+        <div class="select">
+            <br>
+         <br><select id="p1"><br>
+             <option class="pari" value="impair">Impair</option>
+             <option class="pari" value="pair">Pair</option>
+             <option class="pari" value="2">2</option>
+             <option class="pari" value="3">3</option>
+             <option class="pari" value="4">4</option>
+             <option class="pari" value="5">5</option>
+             <option class="pari" value="6">6</option>
+             <option class="pari" value="7">7</option>
+             <option class="pari" value="8">8</option>
+             <option class="pari" value="9">9</option>
+             <option class="pari" value="10">10</option>
+             <option class="pari" value="11">11</option>
+             <option class="pari" value="12">12</option>
+             <option class="pari" value="13">13</option>
+             <option class="pari" value="14">14</option>
+             <option class="pari" value="15">15</option>
+             <option class="pari" value="16">16</option>
+             <option class="pari" value="17">17</option>
+             <option class="pari" value="18">18</option>
+             <option class="pari" value="19">19</option>
+             <option class="pari" value="20">20</option>
+             <option class="pari" value="21">21</option>
+             <option class="pari" value="22">22</option>
+             <option class="pari" value="23">23</option>
+             <option class="pari" value="24">24</option>
+             <option class="pari" value="25">25</option>
+             <option class="pari" value="26">26</option>
+             <option class="pari" value="27">27</option>
+             <option class="pari" value="28">28</option>
+             <option class="pari" value="29">29</option>
+             <option class="pari" value="30">30</option>
+             <option class="pari" value="31">31</option>
+             <option class="pari" value="32">32</option>
+             <option class="pari" value="33">33</option>
+             <option class="pari" value="34">34</option>
+             <option class="pari" value="35">35</option>
+             <option class="pari" value="36">36</option>
+             
+         </select>
+         <input type="number" id="number" value="">
+         <input type="submit" id="Go" onclick="roulette()"  value="Go">
+         <br><br><br><input type="number" id="pmj" value="100" disabled>
+         <input type="number" id="pmo" value="0" disabled>
+        </div>
+        <br><br><br>
+        </div><br><br><br>
+     </div>
+</div>
+
+
+
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>Slogan</h2>
+                <div class="border"></div>
+                <div class="content">
+                    <p>"On peut gagner maintenant et plus tard et plus tard et maintenant."</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="border"></div>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Corniche Ouest</span>
+                    </div>
+                    <br><div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">00 221 781443319</span>
+                    </div>
+                    <br><div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">mariamsaliou@yahoo.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Votre Avis</h2>
+                <div class="border"></div>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email* </div>
+                            <input type="email" required>
+                        </div>
+                        <br><div class="msg">
+                            <div class="text">Commentaire* </div>
+                            <textarea cols="25" rows="4" required placeholder="Laissez un commentaire"></textarea>
+                        </div>
+                        <br><div class="bta">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
