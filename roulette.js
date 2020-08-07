@@ -1,5 +1,3 @@
-var i =0 ;
-
 
 function nb_aleatoire()
 
